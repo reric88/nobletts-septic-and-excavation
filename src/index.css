@@ -50,9 +50,12 @@ code {
 
 }
 
-button {
-  width: 100px;
+.block-button {
   height: 50px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 0;
+  margin: 10px;
 }
 
 .block {
@@ -112,6 +115,13 @@ header {
   text-align: center;
   background-color: #000;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4vw;
 }
 
 .home {
@@ -120,3 +130,5 @@ header {
   justify-content: center;
 }
 
+.navbar {
+}
