@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nobletts-septic-and-excavation/static/css/main.c3bfd51e.css",
+    "main.js": "/nobletts-septic-and-excavation/static/js/main.c61dcc83.js",
+    "static/js/787.34bbdc0a.chunk.js": "/nobletts-septic-and-excavation/static/js/787.34bbdc0a.chunk.js",
+    "static/media/samuel-cruz-TPD1WXQIfzc-unsplash.jpg": "/nobletts-septic-and-excavation/static/media/samuel-cruz-TPD1WXQIfzc-unsplash.3359af281a708e6668a9.jpg",
+    "index.html": "/nobletts-septic-and-excavation/index.html",
+    "main.c3bfd51e.css.map": "/nobletts-septic-and-excavation/static/css/main.c3bfd51e.css.map",
+    "main.c61dcc83.js.map": "/nobletts-septic-and-excavation/static/js/main.c61dcc83.js.map",
+    "787.34bbdc0a.chunk.js.map": "/nobletts-septic-and-excavation/static/js/787.34bbdc0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3bfd51e.css",
+    "static/js/main.c61dcc83.js"
+  ]
+}
