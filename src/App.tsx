@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+// import logo from './logo.svg';
 import './App.css';
+import { Home } from './components/Home';
+import { Navigation } from './components/Navigation';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [testClicked, setTestClicked] = useState(true);
+
+
+
+
+  const setButtonClicked = () => {
+    setTestClicked((prev)=>!prev);
+    fadeBackground()
+  };
+
+  const fadeBackground = () => {
+    const mainPage = document.getElementById('main-page')
+    if (testClicked){
+      mainPage?.classList.add('fade-background')
+    } else {
+      mainPage?.classList.remove('fade-background')
+    }
+  }
+
+ 
+
+
+
+
+
+  return (<>
+    <div className="main" id='main-page'>
+      <Navigation fadeBackground={()=>fadeBackground()} testClicked={testClicked} setButtonClicked={setButtonClicked} />
+      <Home />
     </div>
+    </>
   );
 }
 
