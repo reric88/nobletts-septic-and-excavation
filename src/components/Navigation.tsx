@@ -24,8 +24,8 @@ const slideBladesUp = () => {
             <div className={`block block3 ${props.testClicked ? 'block3-down' : 'block3-up'}`}></div>
             
             <nav className='navbar'>
-            <header>
-            <button onClick={props.setButtonClicked} className='block-button'></button>
+            <header className={`${!props.testClicked ? 'header-border' : ''}`}>
+            <button onClick={props.setButtonClicked} className='block-button'><i className="fa-solid fa-bars"></i></button>
           <h1>Noblett’s Septic & Excavating</h1>
         </header>
             </nav>

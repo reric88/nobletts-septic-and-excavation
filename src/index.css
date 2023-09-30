@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,11 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
@@ -25,12 +27,21 @@ code {
 }
 
 .main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+.main-background {
+  position: absolute;
   background-image: url('/public/images/samuel-cruz-TPD1WXQIfzc-unsplash.jpg');
   background-position: center;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   filter: grayscale(.5) brightness(.8) contrast(2);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .fade-background {
@@ -54,15 +65,31 @@ code {
   height: 50px;
   aspect-ratio: 1/1;
   position: absolute;
-  left: 0;
-  margin: 10px;
+  right: 0;
+  margin: 20px;
+  margin-right: 2%;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  font-size: 30px;
+}
+
+.block-button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.block-button:active {
+  border: none;
+  font-size: 25px;
 }
 
 .block {
   position: absolute;
   background-color: #000;
   height: 2000px;
-
+  z-index: -1;
 }
 
 .block1 {
@@ -110,18 +137,25 @@ code {
 header {
   height: 10vw;
   min-height: 75px;
-  max-height: 150px;
+  max-height: 120px;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   background-color: #000;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
+.header-border {
+  border-bottom: 1px solid white;
+}
+
 header h1 {
-  font-size: 4vw;
+  font-size: 5vw;
+  font-family: "Archivo Narrow";
+  font-weight: 700;
+  margin-right: 100px;
 }
 
 .home {
@@ -131,4 +165,16 @@ header h1 {
 }
 
 .navbar {
+  z-index: 99;
+}
+
+@media (orientation: landscape) {
+  header {
+
+  }
+
+  header h1 {
+    font-size: 50px;
+    margin-right: 140px;
+  }
 }

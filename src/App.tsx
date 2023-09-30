@@ -16,7 +16,7 @@ function App() {
   };
 
   const fadeBackground = () => {
-    const mainPage = document.getElementById('main-page')
+    const mainPage = document.getElementById('main-background')
     if (testClicked){
       mainPage?.classList.add('fade-background')
     } else {
@@ -34,6 +34,7 @@ function App() {
     <div className="main" id='main-page'>
       <Navigation fadeBackground={()=>fadeBackground()} testClicked={testClicked} setButtonClicked={setButtonClicked} />
       <Home />
+      <div className='main-background' id='main-background'></div>
     </div>
     </>
   );
