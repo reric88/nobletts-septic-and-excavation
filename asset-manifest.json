@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nobletts-septic-and-excavation/static/css/main.c0613966.css",
-    "main.js": "/nobletts-septic-and-excavation/static/js/main.8b0341d6.js",
+    "main.css": "/nobletts-septic-and-excavation/static/css/main.aab4c536.css",
+    "main.js": "/nobletts-septic-and-excavation/static/js/main.0ae046f9.js",
     "static/js/787.34bbdc0a.chunk.js": "/nobletts-septic-and-excavation/static/js/787.34bbdc0a.chunk.js",
     "static/media/samuel-cruz-TPD1WXQIfzc-unsplash.jpg": "/nobletts-septic-and-excavation/static/media/samuel-cruz-TPD1WXQIfzc-unsplash.3359af281a708e6668a9.jpg",
     "index.html": "/nobletts-septic-and-excavation/index.html",
-    "main.c0613966.css.map": "/nobletts-septic-and-excavation/static/css/main.c0613966.css.map",
-    "main.8b0341d6.js.map": "/nobletts-septic-and-excavation/static/js/main.8b0341d6.js.map",
+    "main.aab4c536.css.map": "/nobletts-septic-and-excavation/static/css/main.aab4c536.css.map",
+    "main.0ae046f9.js.map": "/nobletts-septic-and-excavation/static/js/main.0ae046f9.js.map",
     "787.34bbdc0a.chunk.js.map": "/nobletts-septic-and-excavation/static/js/787.34bbdc0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0613966.css",
-    "static/js/main.8b0341d6.js"
+    "static/css/main.aab4c536.css",
+    "static/js/main.0ae046f9.js"
   ]
 }
