@@ -22,7 +22,18 @@ const slideBladesUp = () => {
             <div className={`block block1 ${props.testClicked ? 'block1-down' : 'block1-up'}`}></div>
             <div className={`block block2 ${props.testClicked ? 'block2-down' : 'block2-up'}`}></div>
             <div className={`block block3 ${props.testClicked ? 'block3-down' : 'block3-up'}`}></div>
-            <div className={`block block4 ${props.testClicked ? 'block4-down' : 'block4-up'}`}></div>
+            <div className={`block block4 ${props.testClicked ? 'block4-down' : 'block4-up'}`}>
+
+        <div className={`nav-menu ${props.testClicked ? 'nav-menu-down' : 'nav-menu-up'}`}>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#creator">Developer</a></li>
+          </ul>
+        </div>
+            </div>
             
             <nav className='navbar'>
             <header className={`${!props.testClicked ? 'header-border' : ''}`}>
@@ -35,15 +46,6 @@ const slideBladesUp = () => {
             </h2>
 
         </header>
-        <div className={`nav-menu ${props.testClicked ? 'nav-menu-down' : 'nav-menu-up'}`}>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#creator">Developer</a></li>
-          </ul>
-        </div>
             </nav>
         </div>
     </div>
