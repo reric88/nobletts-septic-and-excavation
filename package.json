@@ -1,7 +1,7 @@
 {
   "name": "for-frances",
   "version": "0.1.0",
-  "homepage": "https://reric88.github.io/nobletts-septic-and-excavation",
+  "homepage": "https://reric88.github.io/nobletts-septic-and-excavation/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
