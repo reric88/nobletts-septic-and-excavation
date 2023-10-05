@@ -12,7 +12,7 @@ import { Error } from './components/Error';
 
 function App() {
   const [testClicked, setTestClicked] = useState(true);
-  const [currentPage, setCurrentPage] = useState('home')
+  const [currentPage, setCurrentPage] = useState('contact')
 
 const backgrounds = {
   skidsteer: '/src/images/samuel-cruz-TPD1WXQIfzc-unsplash.jpg',

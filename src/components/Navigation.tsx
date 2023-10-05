@@ -29,8 +29,9 @@ const handleNavClick = (page: string) => {
             </div>            
             <nav className='navbar'>
             <header className={`${!props.testClicked ? 'header-border' : ''}`}>
-            <button onClick={props.setButtonClicked} className='block-button'><i className="fa-solid fa-bars"></i></button>
+              <div className='spacer'></div>
           <h1>Noblett’s Septic & Excavation</h1>
+            <button onClick={props.setButtonClicked} className='block-button'><i className="fa-solid fa-bars"></i></button>
         </header>
             </nav>
         </div>
