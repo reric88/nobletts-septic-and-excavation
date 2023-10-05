@@ -67,8 +67,6 @@ let bgTimer = false;
  const displayCurrentPage = () => {
   if (currentPage === 'home'){
     return <Home />
-  } else if (currentPage === 'about'){
-    return <About />
   } else if (currentPage === 'contact'){
     return <Contact />
   } else if (currentPage === 'services'){
@@ -105,7 +103,7 @@ useEffect(() => {
       <div className=
       {`main-background 
       ${testClicked ? '' : 'fade-background'} 
-      ${currentPage === 'home' ? 'skidsteer' : currentPage === 'contact' ? 'phone' : currentPage === 'services' ? 'calendar' : currentPage === 'about' ? 'gravel' : currentPage === 'creator' ? 'code' : ''}
+      ${currentPage === 'home' ? 'skidsteer' : currentPage === 'contact' ? 'phone' : currentPage === 'services' ? 'calendar' : currentPage === 'creator' ? 'code' : ''}
       `} id='main-background'></div>
       {displayCurrentPage()}
     </div>

@@ -21,9 +21,10 @@ const handleNavClick = (page: string) => {
                 <ul>
                   <li onClick={()=>handleNavClick('home')}><a href="#home">Home</a></li>
                   <li onClick={()=>handleNavClick('services')}><a href="#services">Services</a></li>
-                  <li onClick={()=>handleNavClick('about')}><a href="#about">About</a></li>
                   <li onClick={()=>handleNavClick('contact')}><a href="#contact">Contact</a></li>
-                  <li onClick={()=>handleNavClick('creator')}><a href="#creator">Developer</a></li>
+                  <li className='blank-li'><a href=""></a></li>
+                  <li className='li-creator'><div onClick={()=>handleNavClick('creator')}><a href="#creator">©2023 - Eric Collard</a></div></li>
+                  
                 </ul>
               </div>
             </div>            
