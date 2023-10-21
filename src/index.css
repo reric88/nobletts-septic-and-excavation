@@ -638,8 +638,13 @@ header h2 span {
 
 .blank-li {
   pointer-events: none;
-  height: 144px;
+  height: 140px;
 
+}
+
+.nav-menu ul .li-creator:hover a {
+
+  color: #ffc;
 }
 
 .nav-menu ul .li-creator a {
@@ -649,6 +654,10 @@ header h2 span {
 } 
 
 .nav-menu ul .li-creator a:hover {
-  color: #ffc;
 
+}
+
+.error-page {
+  background-color: red;
+  color: white;
 }

@@ -1,6 +1,16 @@
 import React from 'react'
 
-export const Services = () => {
+type Props = {
+  setCurrentPage: (page:string)=>void
+}
+
+export const Services = (props: Props) => {
+
+
+  const handleServicesClick = (page: string) => {
+    props.setCurrentPage(page)
+  }
+
   return (
     <div className='services'>
       <h2>Our Services Include:</h2>
@@ -41,7 +51,7 @@ export const Services = () => {
 </div>
 
 <div className="service contact-us">
-  <a href="#contact">Contact us</a> <p>today to discuss</p> <p>your excavation and utility needs!</p>
+  <a onClick={()=>handleServicesClick('contact')} href="#contact">Contact us</a> <p>today to discuss</p> <p>your excavation and utility needs!</p>
 </div>
 <div className='service'></div>
     </div>

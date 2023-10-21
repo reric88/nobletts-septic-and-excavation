@@ -12,7 +12,7 @@ import { Error } from './components/Error';
 
 function App() {
   const [testClicked, setTestClicked] = useState(true);
-  const [currentPage, setCurrentPage] = useState('contact')
+  const [currentPage, setCurrentPage] = useState('home')
 
 const backgrounds = {
   skidsteer: '/src/images/samuel-cruz-TPD1WXQIfzc-unsplash.jpg',
@@ -33,6 +33,10 @@ let bgTimer = false;
   const handleSetPage = (page: string) => {
     setCurrentPage(page)
     setButtonClicked()
+  }
+
+  const handleSetServicesPage = (page: string) => {
+    setCurrentPage(page)
   }
 
   // const fadeBackground = () => {
@@ -70,7 +74,7 @@ let bgTimer = false;
   } else if (currentPage === 'contact'){
     return <Contact />
   } else if (currentPage === 'services'){
-    return <Services />
+    return <Services setCurrentPage={handleSetServicesPage} />
   } else if (currentPage === 'creator'){
     return <Creator />
   } else return <Error />
